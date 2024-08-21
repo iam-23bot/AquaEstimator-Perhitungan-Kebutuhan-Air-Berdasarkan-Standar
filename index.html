@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kebutuhan Air Bersih</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Kebutuhan Air Bersih</h1>
+        <form id="waterCalcForm">
+            <label for="population">Jumlah Penduduk/Pengguna:</label>
+            <input type="number" id="population" required placeholder="Masukkan jumlah penduduk">
+
+            <label for="standard">Pilih Standar:</label>
+            <select id="standard">
+                <option value="SNI">SNI</option>
+                <option value="PU">PU</option>
+            </select>
+
+            <button type="button" onclick="calculateWater()">Hitung</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+    <footer>
+        <p>Developed by <a href="https://www.linkedin.com/in/muhammad-alfi-syahri/" target="_blank">Muhammad Alfi Syahri</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
